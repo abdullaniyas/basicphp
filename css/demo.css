@@ -1,0 +1,268 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 29, 2015, 9:56:47 AM
+    Author     : Niyas.Abdulla
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+}
+.hide {
+  display: none;  
+}
+header {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: auto;
+    min-height: 120px;
+    border-bottom: 15px solid #157748;
+}
+header .container img {
+    width: 260px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+}
+header div ul {
+    padding: 0;
+    float: right;
+    margin: 64px 25px 0 0;
+}
+header div ul li {
+    list-style: none;
+    width: auto;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 2px solid #3A463C;
+}
+header div ul li:hover {
+    border-bottom: 2px solid #fff;
+}
+.selected-menu {
+    border-bottom: 2px solid #fff;
+}
+section {
+    background-color: #000000;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    position: relative;
+}
+.container{
+    margin: 0 auto;
+    width: 1024px;
+    height: auto;
+}
+.insert-container, .success-message {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 20px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 90;
+}
+.insert {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin: 100px auto;
+    min-height: 100px;
+    padding: 20px;
+    width: 207px;
+    position: relative;
+    border: 1px solid #157748;
+}
+.insert ul {
+    margin: 0;
+    padding: 0;
+}
+.insert ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.insertp {
+    background-color: #cc0000;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 10px;
+    position: absolute;
+    right: -16px;
+    text-align: center;
+    top: -16px;
+    cursor: pointer;
+}
+.input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+.btn-submit {
+    width: 205px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgba(0, 149, 221, 1);
+    color: #CEFFF8;
+    cursor: pointer;
+    border: 0;
+}
+.btn-submit:hover {
+    background-color: rgba(0, 149, 221, 0.6);
+}
+.success-message {
+    z-index: 95;
+}
+.success-message p {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #346006;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    width: 166px;
+}
+.search-tab {
+    float: left;
+    width: 50%;
+}
+.search-tab form .typeahead {
+    float: left;
+    width: 320px;
+    margin: 20px 0;
+    height: 25px;
+    font-size: 16px;
+}
+.search-tab form button{
+    float: left;
+    width: 100px;
+    margin: 20px 5px;
+    height: 31px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(21, 119, 72, 0.8);
+}
+.search-tab form button:hover {
+    background-color: rgba(21, 119, 72, 1);
+}
+.insert-tab {
+    float: right;
+    width: 49%;
+    margin-top: 5px;
+}
+.insert-tab p {
+    float: right;
+    color: #fff;
+    padding: 4px 20px;
+    background-color: rgba(21, 119, 72, 0.8);
+}
+.data-table {
+    width: 100%;
+    float: left;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+thead > tr{
+    background-color: rgba(21, 119, 72, 0.9);
+    color: #fff;
+    padding: 7px;
+    font-size: 18px;
+}
+tbody tr {
+    color: #2a2a2a;
+}
+tbody tr:nth-child(even) {background: #CCC}
+tbody tr:nth-child(odd) {background: #FFF}
+.no-result {
+    color: red;
+    font-size: 18px;
+}
+/*.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}*/
+
+.content {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 60px;
+}
+.content a {
+    color: #fff;
+    text-decoration: none;
+}
+.content a:hover {
+    color: #157748;
+}
+.content ul li pre {
+    padding: 0;
+    margin: 0
+}
+.content ul li pre p, .content pre p {
+    padding: 0;
+    margin: -25px;
+    font-size: 20px;
+}
+
+footer {
+    position: relative;
+}
